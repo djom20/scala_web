@@ -1,8 +1,8 @@
 sftp-config.json
 node_modules/
 gulpfile.js
-packages.json
 
+*.json
 *.zip
 *.rar
 *.log
