@@ -31,7 +31,7 @@
 html {
 	overflow-x: hidden;
 	width: 100%;
-	min-width: 400px;
+	min-width: 300px;
 }
 
 img.responsign {
@@ -299,6 +299,24 @@ img.responsign {
 		margin: 0 auto;
 		width: 100%;
 	}
+
+	#navbar3 > .container > .buttons img {
+		width: 60%;
+	}
+
+	#navbar3 > .container > .buttons #button1, #button2 {
+		width: 50%;
+		float: left;
+	}
+
+	#navbar3 > .container > .buttons #button3 {
+		width: 100%;
+		float: left;
+	}
+
+	#navbar3 > .container > .buttons #button3 img {
+		width: 29%;
+	}
 }
 
 #slide3 {
@@ -407,6 +425,18 @@ img.responsign {
 	position: absolute;
 	width: 50px;
 	z-index: 1;
+}
+
+@media (max-width: 767px){
+	.scrolling {
+		bottom: 5px;
+		height: 30px;
+		width: 30px;
+	}
+
+	.scrolling a > img{
+		width: 100%;
+	}
 }
 
 .scrolling a {
@@ -533,15 +563,16 @@ img.responsign {
 
 @media (max-width: 721px){
 	.carousel-control {
-		left: 5%;
+		top: -30px;
+		left: 4%;
 	}
 
 	.carousel-control.right {
-		right: 5%;
+		right: 4%;
 	}
 
 	.slide3.carousel-control {
-		top: 0px;
+		top: -30px;
 	}
 }
 
@@ -567,4 +598,16 @@ button.closed, button.closed:hover {
 	margin-right: -27px;
 	margin-top: -14px;
 	margin-bottom: -23px;
+}
+
+@media (max-width: 721px){
+	/* Modal */
+	.modal-dialog {
+		width: 340px;
+	}
+
+	button.closed, button.closed:hover {
+		bottom: -25px;
+		left: 32%;
+	}
 }
