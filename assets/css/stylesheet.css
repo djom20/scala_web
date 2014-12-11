@@ -31,6 +31,7 @@
 html {
 	overflow-x: hidden;
 	width: 100%;
+	min-width: 400px;
 }
 
 img.responsign {
@@ -50,14 +51,10 @@ img.responsign {
 
 #menu {
 	margin: 0 auto;
-	width: 68%;
+	width: 72%;
 }
 
 @media all and (min-width:1215px) and (max-width: 1341px) {  /* 19" */
-    #menu {
-		width: 72%;
-	}
-
 	.carousel-control {
 		top: 334px !important;
 	}
@@ -92,6 +89,34 @@ img.responsign {
 	}
 }
 
+@media screen and (max-width: 770px) {
+    #menu {
+		width: 100%;
+	}
+
+	#menu,
+	#menu .container-fluid,
+	.container-fluid>.navbar-header,
+	.navbar>.container-fluid .navbar-brand,
+	.navbar-nav {
+		height: auto;
+	}
+
+	/*.navbar-collapse.collapse {
+		position: relative;
+		z-index: 1;
+	}*/
+
+	.navbar-nav {
+		height: 160px;
+		margin-top: 0;
+	}
+
+	.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+		 border-color: transparent;
+	}
+}
+
 #slide1, #slide2, #slide3 {
 	position: relative;
 }
@@ -102,8 +127,9 @@ img.responsign {
 
 #navbar1 {
 	background-color: #fff;
-	height: 181px;
 	font-family: 'WeblySleekUILight Italic';
+	height: auto;
+	padding-bottom: 40px;
 }
 
 #navbar1 h2 {
@@ -113,13 +139,29 @@ img.responsign {
 	text-transform: uppercase;
 }
 
-#navbar1 > .wrapper {
+#navbar1 > .container {
 	margin-top: 28px;
 }
 
 #navbar1 h2.title {
 	float: left;
 	margin-left: 20px;
+}
+
+@media screen and (max-width: 770px) {
+    #navbar1 h2.title {
+		float: none;
+		margin-left: 0px;
+		text-align: center;
+	}
+
+	#link_to_home {
+		margin-right: 0px !important;
+	}
+
+	.navbar-default .navbar-toggle {
+		margin-top: 35px;
+	}
 }
 
 #navbar1 h2.title2 {
@@ -140,6 +182,16 @@ img.responsign {
 	margin-left: 52px;
 }
 
+@media screen and (max-width: 770px) {
+	#navbar1 .helper {
+		margin-top: 0px;
+		margin-left: 0px;
+		text-align: center;
+		margin-bottom: 30px;
+	}
+}
+
+
 #navbar1 .line2 > img {
 	padding-top: 60px;
 	width: 42%;
@@ -147,7 +199,8 @@ img.responsign {
 
 #navbar2 {
 	background-image: url('../img/proyecto.png');
-	height: 284px;
+	background-size: cover;
+	height: auto;
 }
 
 #navbar2 h2 {
@@ -158,19 +211,29 @@ img.responsign {
 #navbar2 p {
 	font-family: 'WeblySleekUILight';
 	font-size: 15.6px;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	width: 500px;
+}
+
+@media screen and (max-width: 540px) {
+    #navbar2 p {
+    	padding: 0 15px;
+		width: 100%;
+	}
 }
 
 #navbar2 .line > img {
 	padding-top: 36px;
-	width: 100%;
+	width: 32%;
 }
 
-#navbar2 > .wrapper {
+#navbar2 > .container {
 	color: #fff;
-	margin: 0 auto;
+	/*margin: 0 auto;*/
 	padding-bottom: 15px;
 	padding-top: 10px;
-	width: 450px; /* 420px */
+	/*width: 450px; */
 }
 
 #slide2 {
@@ -180,7 +243,14 @@ img.responsign {
 
 #navbar3 {
 	background-color: #fff;
-	height: 435px;
+	height: auto;
+	padding-bottom: 45px;
+}
+
+@media screen and (max-width: 767px) {
+	#navbar3 {
+		padding-bottom: 25px;
+	}
 }
 
 #navbar3 h2 {
@@ -192,6 +262,15 @@ img.responsign {
 
 #navbar3 p {
 	font-family: 'WeblySleekUILight Italic';
+	margin: 0 auto;
+	margin-bottom: 10px;
+	width: 743px;
+}
+
+@media screen and (max-width: 830px) {
+    #navbar3 p {
+		width: 100%;
+	}
 }
 
 #navbar3 .line2 > img, #maps .line2 > img {
@@ -199,17 +278,27 @@ img.responsign {
 	width: 20%;
 }
 
-#navbar3 > .wrapper {
-	margin: 0 auto;
+#navbar3 > .container {
 	padding-bottom: 15px;
 	padding-top: 25px;
-	width: 743px;
 }
 
-#navbar3 > .wrapper > .buttons {
+#navbar3 > .container > .buttons {
 	padding-top: 26px;
 	padding-left: 70px;
 	padding-right: 70px;
+	margin: 0 auto;
+	width: 743px;
+}
+
+@media screen and (max-width: 767px) {
+    #navbar3 > .container > .buttons {
+		padding-top: 26px;
+		padding-left: 0px;
+		padding-right: 0px;
+		margin: 0 auto;
+		width: 100%;
+	}
 }
 
 #slide3 {
@@ -218,7 +307,8 @@ img.responsign {
 
 #maps {
 	background-color: #fff;
-	height: 693px;
+	height: auto;
+	padding-bottom: 45px;
 }
 
 #maps h2 {
@@ -228,20 +318,25 @@ img.responsign {
 	text-transform: uppercase;
 }
 
+#maps p, .map {
+	margin: 0 auto;
+	width: 656px;
+}
+
+@media (max-width: 721px){
+	#maps p, .map {
+		width: 100%;
+	}
+}
+
 #maps p {
 	font-family: 'WeblySleekUILight';
 	font-size: 14.7px;
 	margin-bottom: 38px;
 }
 
-#maps .map {
-	width: 100%;
-}
-
-#maps > .wrapper {
-	margin: 0 auto;
+#maps > .container {
 	padding-top: 36px;
-	width: 656px;
 }
 
 #contact {
@@ -280,14 +375,29 @@ img.responsign {
 	width: 158px;
 }
 
-#contact > .wrapper {
+#contact > .container {
 	padding-top: 55px;
-	margin: 0 auto;
+	/*margin: 0 auto;*/
 }
 
-.info > li {
+#contact .info > li {
 	float: left;
 	margin-left: 15px;
+}
+
+@media (max-width: 767px){
+	#contact .info > li {
+		float: none;
+		margin-left: 0px;
+	}
+
+	#contact .mini-menu {
+		margin-bottom: 41px;
+	}
+
+	#contact .info {
+		width: 100%;
+	}
 }
 
 .scrolling {
@@ -409,18 +519,29 @@ img.responsign {
 @media screen and (max-width: 1000px) {
 	.carousel-control {
 		top: 270px;
+		left: 44.5%;
 	}
 
 	.carousel-control.right, {
 		right: 44.5%;
 	}
 
+	.slide3.carousel-control {
+		top: 180px;
+	}
+}
+
+@media (max-width: 721px){
 	.carousel-control {
-		left: 44.5%;
+		left: 5%;
+	}
+
+	.carousel-control.right {
+		right: 5%;
 	}
 
 	.slide3.carousel-control {
-		top: 180px;
+		top: 0px;
 	}
 }
 

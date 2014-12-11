@@ -4,13 +4,44 @@
 }
 
 /* Smartphones (landscape) ----------- */
-@media only screen and (min-width : 321px) {
-/* Styles */
+@media only screen and (max-width : 321px) {
+	/* Maps */
+	#maps {
+		/*height: auto;*/
+		height: 460px;
+	}
+
+	#maps > .wrapper {
+		padding-top: 0px;
+		width: 100%;
+	}
+
+	#maps p, .map {
+		width: 100%;
+	}
+
+	/* Contacto  */
+	#contact .info > li {
+		float: none;
+		margin-left: 0px;
+	}
+
+	#contact .logo {
+		width: 100%;
+	}
+
+	#contact .info {
+		width: 290px;
+	}
+
+	#contact .mini-menu {
+		margin-bottom: 41px;
+	}
 }
 
 /* Smartphones (portrait) ----------- */
 @media only screen and (max-width : 320px) {
-/* Styles */
+	
 }
 
 /* iPads (portrait and landscape) ----------- */
