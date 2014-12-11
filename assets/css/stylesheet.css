@@ -53,11 +53,23 @@ img.responsign {
 	width: 68%;
 }
 
-@media all and (min-width:1215px) and (max-width: 1441px) {  /* 19" */
+@media all and (min-width:1215px) and (max-width: 1341px) {  /* 19" */
+    #menu {
+		width: 72%;
+	}
+
+	.carousel-control {
+		top: 334px !important;
+	}
+}
+
+@media all and (min-width:1342px) and (max-width: 1441px) {  /* 19" */
     #menu {
 		width: 60%;
 	}
+}
 
+@media all and (min-width:1215px) and (max-width: 1441px) {  /* 19" */
 	.carousel-control {
 		top: 330px;
 	}
